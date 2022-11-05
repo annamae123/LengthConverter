@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <div class = "wrapper">
+    <header>Length Converter</header>
+    <form action="#" method="">
+    <div class="amount">
+      <p>Enter Number</p>
+    <input type="text" placeholder="Number" id="input">
+  </div>
+  
+    <div class="drop-list">
+  <div class="from">
+    <p>From</p>
+    <select class="select-box" id="inputType"> 
+      <option value="kilometer">Kilometer</option>
+      <option  value="meter">Meter</option>
+      <option  value="centimeter">Centimeter</option>
+      <option  value="feet">Feet</option>
+      <option  value="inches">Inches</option>
+      <option  value="yards">Yards</option>
+      <option  value="miles">Miles</option>
+      
+     
+    </select>
+  </div>
+  <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+  <div class="to">
+    <p>To</p>
+    <select class="select-box" id="resultType"> 
+      <option value="kilometer">Kilometer</option>
+      <option  value="meter">Meter</option>
+      <option  value="centimeter">Centimeter</option>
+      <option  value="feet">Feet</option>
+      <option  value="inches">Inches</option>
+      <option  value="yards">Yards</option>
+      <option  value="miles">Miles</option>
+      
+    </select>
+  </div>
+</div>
+
+<div class="answer" ><input type="text" placeholder="Result" id="result" ></div>
+    <button onClick="getConversion()" id="btn">Get Conversion</button>
+    </form>
+  </div>
+
+   
+  
+  <script src="app.js"></script>
+</body>
+</html>
