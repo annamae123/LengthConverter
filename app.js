@@ -1,21 +1,21 @@
 var input = document.getElementById('input');
 var result = document.getElementById('result');
 var inputType = document.getElementById('inputType');
-var resultType = document.getElementById('resultType');
+ var resultType = document.getElementById('resultType');
 var inputTypeValue,resultTypeValue;
-var getButton = document.querySelector("btn");
 
 
-input.addEventListener("keyup",getConversion);
-inputType.addEventListener("change",getConversion);
-resultType.addEventListener("change",getConversion);
 
-getButton.addEventListener("click",
-    getConversion);
+// input.addEventListener("keyup",getConversion);
+// inputType.addEventListener("change",getConversion);
+// resultType.addEventListener("change",getConversion);
+
+//  getButton.addEventListener("click",
+//     getConversion);
 
 
-inputTypeValue = inputType.value;
-resultTypeValue = resultType.value;
+//  inputTypeValue = inputType.value;
+// resultTypeValue = resultType.value;
 
 
 
@@ -23,13 +23,16 @@ resultTypeValue = resultType.value;
 
 
 function getConversion(){
-    
-    inputTypeValue = inputType.value;
-    resultTypeValue = resultType.value;
+
+
+inputTypeValue = inputType.value;
+ resultTypeValue = resultType.value;
 
     if(inputTypeValue === "meter" && resultTypeValue === "kilometer"){
         //meter to kilometer formula
-        result.value = Number(input.value) * 0.001;
+        result.value = input.value * 0.001;
+
+       document.getElementById('result').innerHTML =   result.value;
        
     }else if (inputTypeValue === "meter" && resultTypeValue === "centimeter"){
         //meter to centimter
